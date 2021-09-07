@@ -152,5 +152,48 @@ section {
       width: 15rem;
       background-color: grey;
     }
+    .modal {
+      animation-duration: 200ms;
+      animation-name: modalOpen;
+      animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+      height: 50%;
+      width: 50%;
+      background-color: grey;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+
+      .title {
+      }
+
+      h3 {
+      }
+      .description {
+      }
+      .link {
+      }
+    }
+  }
+}
+
+@keyframes modalOpen {
+  from {
+    left: 0;
+  }
+  25% {
+    left: 10%;
+  }
+  50% {
+    left: 20%;
+  }
+  75% {
+    left: 30%;
+  }
+
+  to {
+    left: 50%;
   }
 }
